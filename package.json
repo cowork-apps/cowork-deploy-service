@@ -1,0 +1,9 @@
+{
+  "name": "cowork-deploy-service", "version": "0.0.1", "private": true, "type": "module",
+  "scripts": { "start": "tsx src/main.ts", "postinstall": "bash scripts/get-temporal.sh" },
+  "dependencies": {
+    "@hono/node-server": "^1.13.7", "@temporalio/activity": "^1.11.6", "@temporalio/client": "^1.11.6", "@temporalio/worker": "^1.11.6", "@temporalio/workflow": "^1.11.6",
+    "hono": "^4.6.14", "tsx": "^4.19.0", "zod": "^3.23.8", "typescript": "^5.6.0"
+  },
+  "engines": { "node": ">=20" }
+}
